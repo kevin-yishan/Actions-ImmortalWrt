@@ -1,6 +1,8 @@
 # ImmortalWrt 自动编译
 
-## 使用步骤：
+## 使用步骤
+
+### 正常流程
 
 1. fork 本仓库
 
@@ -16,7 +18,7 @@
 
 5. 等待编译完成，大约需要 2-3 小时
 
-6. 进入编译完成的 workflow，点击左侧 Summary，下载 ImmortalWrt-build-result，解压后即为编译完成后的固件![build-result](picture/build-result.jpg)
+6. 进入编译完成的 workflow，点击左侧 Summary，下载 `ImmortalWrt-build-result`，解压后即为编译完成后的固件![build-result](picture/build-result.jpg)
 
 ## 如何定制 config 和 feeds：
 
