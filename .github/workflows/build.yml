@@ -99,9 +99,10 @@ jobs:
         run: zip -r ImmortalWrt-build-result.zip ImmortalWrt/bin/targets
 
       - name: 创建 Tag (Create Tag)
-        uses: jaywcjlove/create-tag-action@v2.1.0
+        uses: rickstaa/action-create-tag@v1.7.2
         with:
-          version: v1.0.0
+          tag: v1.0.0
+          force_push_tag: true
 
       - name: 上传编译结果到 Release (Upload build result to Release)
         uses: ncipollo/release-action@v1.14.0
@@ -165,9 +166,10 @@ jobs:
         run: zip -r ImmortalWrt-build-result.zip ImmortalWrt/bin/targets
 
       - name: 创建 Tag (Create Tag)
-        uses: jaywcjlove/create-tag-action@v2.1.0
+        uses: rickstaa/action-create-tag@v1.7.2
         with:
-          version: v1.0.0
+          tag: v1.0.0
+          force_push_tag: true
 
       - name: 上传编译结果到 Release (Upload build result to Release)
         uses: ncipollo/release-action@v1.14.0
