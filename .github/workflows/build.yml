@@ -89,14 +89,14 @@ jobs:
         run: |
           make -j1 V=99
 
-      - name: 打包编译结果 (Package build result)
-        run: zip -r ImmortalWrt-build-result.zip ImmortalWrt/bin/targets
-
       - name: 上传编译结果到 Artifact (Upload build result to Artifact)
         uses: actions/upload-artifact@v4
         with:
           name: ImmortalWrt-build-result
-          path: ImmortalWrt-build-result.zip
+          path: ImmortalWrt/bin/targets
+
+      - name: 打包编译结果 (Package build result)
+        run: zip -r ImmortalWrt-build-result.zip ImmortalWrt/bin/targets
 
       - name: 创建 Tag (Create Tag)
         uses: jaywcjlove/create-tag-action@v2.1.0
@@ -155,14 +155,14 @@ jobs:
         run: |
           make -j1 V=99
 
-      - name: 打包编译结果 (Package build result)
-        run: zip -r ImmortalWrt-build-result.zip ImmortalWrt/bin/targets
-
       - name: 上传编译结果到 Artifact (Upload build result to Artifact)
         uses: actions/upload-artifact@v4
         with:
           name: ImmortalWrt-build-result
-          path: ImmortalWrt-build-result.zip
+          path: ImmortalWrt/bin/targets
+
+      - name: 打包编译结果 (Package build result)
+        run: zip -r ImmortalWrt-build-result.zip ImmortalWrt/bin/targets
 
       - name: 创建 Tag (Create Tag)
         uses: jaywcjlove/create-tag-action@v2.1.0
@@ -175,4 +175,3 @@ jobs:
           allowUpdates: true
           artifacts: ImmortalWrt-build-result.zip
           tag: v1.0.0
-

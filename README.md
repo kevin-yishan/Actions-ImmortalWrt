@@ -4,21 +4,19 @@
 
 ### 正常流程
 
-1. fork 本仓库
-
-2. 上传 `.config` 文件与 `feeds.conf.default` 文件到此仓库(必须)
-
-3. 编辑仓库内的 `diy.sh` 文件，可以自定义编译前的命令，一般使用 git clone 来克隆需要使用到的第三方插件
-
+1. (必须)fork 本仓库
+2. (必须)上传 `.config` 文件与 `feeds.conf.default` 文件到此仓库
+3. (可选) 编辑仓库内的 `diy.sh` 文件，可以自定义编译前的命令，一般使用 git clone 来克隆需要使用到的第三方插件
 4. - 进入本仓库的 Actions 页面
    - 在左侧选择 `🚀 编译 (Build)`
    - 右侧点击 Run workflow
    - 填入需要编译的仓库的信息
-   - 最后点击绿色的 Run workflow![Run workflow](https://cdn.jsdelivr.net/gh/bling-yshs/ys-image-host@main/img/202405291542117.png)
-
+   - 最后点击绿色的 Run workflow![Run workflow](picture/run-workflow.png)
 5. 等待编译完成，大约需要 2-3 小时
-
-6. 进入编译完成的 workflow，点击左侧 Summary，下载 `ImmortalWrt-build-result`，解压后即为编译完成后的固件![build-result](picture/build-result.jpg)
+6. 下载编译完成后的固件，有两种方式：
+   1. 进入编译完成的 workflow，点击左侧 Summary，下载 `ImmortalWrt-build-result`，解压后即为编译完成后的固件
+   2. 进入 Release 界面，下载 `ImmortalWrt-build-result`，
+7. 进入编译完成的 workflow，点击左侧 Summary，下载 `ImmortalWrt-build-result`，解压后即为编译完成后的固件![build-result](picture/build-result.jpg)
 
 ## 如何定制 config 和 feeds：
 
